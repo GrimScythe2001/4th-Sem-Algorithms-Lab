@@ -67,22 +67,22 @@ void DISPLAY () {
     }
     else {
         printf ("List of Elements: ");
-        while (temp != end) {
+        while (temp) {
             printf ("%d ", temp -> value);
             temp = temp -> next;
         }
-        printf ("%d\n", temp -> value);
+        printf ("\n");
     }
 }
 
 void REVERSE () {
     struct NODE *temp = start;
     int temparr ['!'], i=0;
-    while (temp != end) {
+    while (temp) {
         temparr [i++] = temp -> value;
         temp = temp -> next;
     }
-    temparr [i] = temp -> value;
+    --i;
     printf ("Reverse List of Elements: ");
     while (i >= 0) {
         printf ("%d ", temparr[i--]);
