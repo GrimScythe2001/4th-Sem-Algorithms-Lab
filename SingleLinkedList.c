@@ -107,6 +107,35 @@ void SORT () {
     DISPLAY ();
 }
 
+/*
+void SORT () {
+    int flag, TempData; 
+    struct NODE *temp; 
+    struct NODE *ptr = NULL; 
+    do { 
+        flag = 0; 
+        temp = start; 
+        while (temp->next != ptr) { 
+            if (temp->value > temp->next->value) {   
+                TempData = temp->value;
+                temp->value = temp->next->value;
+                temp->next->value = TempData;
+                ++flag; 
+            } 
+            temp = temp->next; 
+        } 
+        ptr = temp; 
+    } while (flag); 
+    printf ("Sorted List of Elements: ");
+    temp = start;
+    while (temp) {
+        printf ("%d ", temp -> value);
+        temp = temp -> next;
+    }
+    printf ("\n");
+}
+*/
+
 int main () {
     int choice;
     do {
