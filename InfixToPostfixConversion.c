@@ -54,7 +54,7 @@ int main () {
                         default: PEDMASkey[i] = 0; break;
                     }
                 }
-                if (PEDMASkey[1] >= PEDMASkey [0] && (PEDMASkey[0] != 3 || PEDMASkey[1] != 3)) {
+                if (PEDMASkey[1] >= PEDMASkey [0] && (PEDMASkey[0] != 3 || PEDMASkey[1] != 3)) {  // if (PEDMASkey[1] >= PEDMASkey[0] && !(PEDMASkey[0] == 3 && PEDMASkey[1] == 3)) {
                     printf ("%c", operation[OperationCounter - 1]);
                     operation[OperationCounter - 1] = operation[OperationCounter];
                     --OperationCounter;
