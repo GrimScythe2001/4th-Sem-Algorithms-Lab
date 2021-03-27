@@ -5,6 +5,13 @@ Instructions: Convert given infix expression to Equivalent Postfix expression
               Infix: (a+b)*(c-d)
               Postfix: ab+cd-*
               To Note: Even though PEDMAS is followed, priority E is followed right to left; D and M have equal priority from left to right; A and S have equal priority from left to right.
+              Example: Infix: a-b+c Postfix: ab-c+ (If you think it should be abc+-, it's incorrect because + is not above -, but rather they both share same priority)
+              Example: Infix: a-(b+c) Postfix: abc+-
+              Example: Infix: a*b/c Postfix: ab*c/
+              Example: Infix: a/b*c Postfix: ab/c*
+              Example: a+b+c+d -> ab+c+d+ ; a-b-c-d -> ab-c-d-
+              Example: a*b*c*d -> ab*c*d* ; a/b/c/d -> ab/c/d/
+              Example: a^b^c^d -> abcd^^^
 */
 
 //My Approach/Solution:
