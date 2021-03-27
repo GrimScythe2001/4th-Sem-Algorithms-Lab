@@ -16,10 +16,10 @@ int main () {
     char input ['!'], operation ['!'];
     int OperationCounter = 0, InputCounter = 0;
 
-    printf ("Enter Infix Expression: ");
+    //printf ("Enter Infix Expression: ");
     scanf (" %[^\n]%*c", input);
 
-    printf ("Output Postfix Expression: ");
+    //printf ("Output Postfix Expression: ");
     operation[OperationCounter++] = '(';
     strcat (input, ")");
 
